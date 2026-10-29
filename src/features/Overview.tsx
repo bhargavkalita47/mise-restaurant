@@ -1,4 +1,4 @@
-import { ArrowDownRight, ArrowRight, ArrowUpRight, BookOpenText, Check, ChevronRight, ClipboardList, Clock3, Package, Plus, TrendingUp, TriangleAlert, UtensilsCrossed } from 'lucide-react';
+import { ArrowDownRight, ArrowRight, ArrowUpRight, BookOpenText, Check, ChevronRight, ClipboardList, Clock3, Package, Plus, TrendingUp, TriangleAlert } from 'lucide-react';
 import { useApp } from '../components/context';
 import type { Page } from '../components/navigation';
 import { Button, Status, TextLink } from '../components/ui';
