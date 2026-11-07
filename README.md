@@ -1,8 +1,16 @@
 # Mise — Restaurant Inventory & Order Management
 
-**A backend-ready restaurant service desk with a distinct cobalt/navy/coral operations UI.**
+Mise is a restaurant operations demo that links the order desk with the kitchen's ingredient stock. Add ingredients, define a recipe, and see how each order affects availability.
 
-Mise is a high-contrast, quick-action restaurant operations workspace for Paloma Kitchen. Add ingredients, define a dish with its recipe, place an order, and watch the exact ingredient amounts leave your inventory automatically. It looks and behaves like an operational product while remaining honest about its browser-only demo mode.
+## Project timeline
+
+| Phase | What changed |
+| --- | --- |
+| Concept | Connect the order desk and kitchen inventory through per-serving recipes. |
+| October 2026 · Service desk preview | Added a live stock-impact preview, low-stock alerts, a kitchen queue, menu controls and an activity log around the order workflow. |
+| Operational rules | Grouped ingredient demand across all dishes before checking availability, then saved the order and deductions together in the browser adapter. |
+
+**Engineering problem.** Two dishes can share an ingredient, and a recipe can change after an order is placed. Mise checks aggregate demand and restores the saved consumption snapshot on cancellation, so recipe edits and repeat cancellations cannot inflate stock.
 
 ## What works today
 
