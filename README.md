@@ -109,7 +109,7 @@ The provided real-API adapter includes `credentials: 'include'`, but a server mu
 
 ## Design direction
 
-Mise has a warm editorial hospitality identity: deep green, ceramic cream, muted sage and copper; Instrument Serif headlines and DM Sans UI type. It intentionally differs from the cooler enterprise design of the Nodal authentication project. Mobile layouts, keyboard focus, empty states, validation feedback, and a visible 3-step first-time workflow are included.
+Mise has a warm editorial hospitality identity: deep green, ceramic cream, muted sage and copper; Instrument Serif headlines and DM Sans UI type. It intentionally differs from the cooler enterprise design of the AccessDesk authentication project. Mobile layouts, keyboard focus, empty states, validation feedback, and a visible 3-step first-time workflow are included.
 
 ## License
 
@@ -117,4 +117,4 @@ MIT. See [LICENSE](LICENSE).
 
 ## Visual identity — service desk edition
 
-Mise deliberately does **not** share the Nodal authentication product's ivory-and-forest-green identity. The restaurant application uses a dark navy service rail, cobalt operational banner, coral CTAs, icy blue/white canvases, Space Grotesk body text and Barlow Condensed display typography. Compact ticket motifs and high-visibility stock alerts reference a restaurant dispatch station rather than an enterprise identity dashboard. The design is defined in `src/styles/service-desk.css`, separate from the mock data and services, so UI branding changes cannot affect future backend integration.
+Mise deliberately does **not** share the AccessDesk authentication product's ivory-and-forest-green identity. The restaurant application uses a dark navy service rail, cobalt operational banner, coral CTAs, icy blue/white canvases, Space Grotesk body text and Barlow Condensed display typography. Compact ticket motifs and high-visibility stock alerts reference a restaurant dispatch station rather than an enterprise identity dashboard. The design is defined in `src/styles/service-desk.css`, separate from the mock data and services, so UI branding changes cannot affect future backend integration.
