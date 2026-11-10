@@ -10,7 +10,12 @@ Mise is a restaurant operations demo that links the order desk with the kitchen'
 | October 2026 · Service desk preview | Added a live stock-impact preview, low-stock alerts, a kitchen queue, menu controls and an activity log around the order workflow. |
 | Operational rules | Grouped ingredient demand across all dishes before checking availability, then saved the order and deductions together in the browser adapter. |
 
-**Engineering problem.** Two dishes can share an ingredient, and a recipe can change after an order is placed. Mise checks aggregate demand and restores the saved consumption snapshot on cancellation, so recipe edits and repeat cancellations cannot inflate stock.
+**Today:** A browser-persisted service desk demo with a kitchen queue, order preview and an activity trail.
+
+## Engineering challenges and solutions
+
+- **Shared ingredients.** Several dishes can draw from the same stock. The order engine totals demand per ingredient before checking availability, then saves the order and deductions in one browser-state mutation.
+- **Recipe edits after sale.** Cancellation restores the quantities saved on the order. A repeat cancellation is rejected, so changing a recipe or retrying an action cannot inflate stock.
 
 ## What works today
 
