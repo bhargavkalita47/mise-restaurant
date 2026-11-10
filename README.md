@@ -1,8 +1,21 @@
-# Mise — Restaurant Inventory & Order Management
+# Mise — Restaurant Operations & Inventory
 
 [Open Mise](https://mise-restaurant.bhargavkalita1327.workers.dev/)
 
-Mise is a restaurant operations app that connects order entry, the kitchen queue and ingredient inventory. Add ingredients, build recipes, then enter an order to see what it will consume before sending it to the kitchen.
+Mise connects the restaurant order desk, kitchen queue and ingredient inventory. Operators define recipes, manage ingredient stock, enter orders and see the stock impact before confirmation. The system tracks fulfilment and restores the recorded ingredient quantities when an order is cancelled.
+
+## Product capabilities
+
+- Order entry, kitchen queue, order status and cancellation.
+- Ingredient stock, deliveries, low-stock alerts and inventory valuation.
+- Menu management, per-serving recipes and availability calculations.
+- Aggregate demand across multiple dishes and reject orders with insufficient stock.
+- Restore exact consumption records on cancellation, even after recipes change.
+- Activity history and configurable restaurant workspace.
+
+**Stack:** React · TypeScript · Vite · Cloudflare Workers · typed service layer
+
+**Deployment scope:** The hosted application stores each restaurant workspace in its browser. Shared staff accounts, cross-device persistence, payment processing and transactional server-side inventory are not currently included.
 
 ## Project timeline
 
@@ -106,10 +119,6 @@ The provided real-API adapter includes `credentials: 'include'`, but a server mu
 3. Implement atomic stock deduction with locking/transactions and idempotency keys for order creation.
 4. Support concurrent orders, audit log integrity, bounded stock adjustments and cancellation rules.
 5. Add backend integration tests, structured error responses, observability and backups.
-
-## Design direction
-
-Mise has a warm editorial hospitality identity: deep green, ceramic cream, muted sage and copper; Instrument Serif headlines and DM Sans UI type. It intentionally differs from the cooler enterprise design of the AccessDesk authentication project. Mobile layouts, keyboard focus, empty states, validation feedback, and a visible 3-step first-time workflow are included.
 
 ## License
 
