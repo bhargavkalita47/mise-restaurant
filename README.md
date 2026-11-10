@@ -1,5 +1,7 @@
 # Mise — Restaurant Inventory & Order Management
 
+[Live demo on Cloudflare Workers](https://mise-restaurant.bhargavkalita1327.workers.dev/)
+
 Mise is a restaurant operations demo that links the order desk with the kitchen's ingredient stock. Add ingredients, define a recipe, and see how each order affects availability.
 
 ## Project timeline
