@@ -1,8 +1,8 @@
 # Mise — Restaurant Inventory & Order Management
 
-[Live demo on Cloudflare Workers](https://mise-restaurant.bhargavkalita1327.workers.dev/)
+[Open Mise](https://mise-restaurant.bhargavkalita1327.workers.dev/)
 
-Mise is a restaurant operations demo that links the order desk with the kitchen's ingredient stock. Add ingredients, define a recipe, and see how each order affects availability.
+Mise is a restaurant operations app that connects order entry, the kitchen queue and ingredient inventory. Add ingredients, build recipes, then enter an order to see what it will consume before sending it to the kitchen.
 
 ## Project timeline
 
@@ -12,7 +12,7 @@ Mise is a restaurant operations demo that links the order desk with the kitchen'
 | October 2026 · Service desk preview | Added a live stock-impact preview, low-stock alerts, a kitchen queue, menu controls and an activity log around the order workflow. |
 | Operational rules | Grouped ingredient demand across all dishes before checking availability, then saved the order and deductions together in the browser adapter. |
 
-**Today:** A browser-persisted service desk demo with a kitchen queue, order preview and an activity trail.
+**Today:** The service desk combines a kitchen queue, ingredient stock checks and an activity trail for orders and inventory changes.
 
 ## Engineering challenges and solutions
 
@@ -27,10 +27,10 @@ Mise is a restaurant operations demo that links the order desk with the kitchen'
 - **Menu & recipes** — create dishes, edit prices/descriptions/categories, define per-serving recipes with actual ingredient quantities, hide/publish dishes, and see maximum servings available.
 - **Activity** — history of orders, stock changes and menu edits.
 - **Settings** — edit restaurant name/location, restore sample workspace.
-- **Data persistence** — mock adapter saves state to the current browser's localStorage. Refreshes retain changes. Default sample restaurant includes 14 ingredients, 5 recipes and 3 orders.
+- **Workspace storage** — records persist in the browser between visits. The starting workspace includes 14 ingredients, 5 recipes and 3 orders.
 - **Safety logic** — combined ingredients across all dishes are checked before an order is accepted; order + deductions are saved in a single state mutation; cancellations restore an exact consumption snapshot even if a recipe changes later; cancelled orders cannot be cancelled twice.
 
-This project does **not** have real user accounts, server-side database persistence, secure authorization, actual transaction processing, or multi-user synchronization yet. Sample orders and activity are synthetic.
+Each browser has its own restaurant workspace. Shared staff accounts, cross-device synchronisation and payment processing are outside the current scope.
 
 ## Run locally
 
